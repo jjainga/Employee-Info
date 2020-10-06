@@ -48,9 +48,9 @@ function createEmployees() {
                     //Creating an id based off how many employees have been created. 
                     const id = employees.length += 1;
                     //Role is set off the first question so this is now static
-                    const role = "Manager";
+                    // const role = "Manager";
                     //Creating the manger with the constructor
-                    const manager = new Manager(answer.name, id, answer.email, role, answer.officeNumber);
+                    const manager = new Manager(answer.name, id, answer.email, answer.officeNumber);
                     //push employee to the employee array to now have each employee
                     employees.push(manager);
                     //Call function again to keep creatign more employees
@@ -80,9 +80,9 @@ function createEmployees() {
                     //Create id based on the total number of employees in the employee array
                     const id = employees.length += 1;
                     //Creater role, role is static based of the first question asked to the user
-                    const role = "Engineer";
+                    // const role = "Engineer";
                     //Create new engineer using the engineer contructor
-                    const engineer = new Engineer(answer.name, id, answer.email, role, answer.username);
+                    const engineer = new Engineer(answer.name, id, answer.email, answer.username);
                     //push the new engineer tothe employee array
                     employees.push(engineer);
                     //Call the createEmployee funciton to repeat the process
@@ -112,9 +112,9 @@ function createEmployees() {
                     //Create id based on the total number of employees in the employee array
                     const id = employees.length += 1;
                     //Creater role, role is static based of the first question asked to the user
-                    const role = "Intern";
+                    // const role = "Intern";
                     //Create new intern using the engineer contructor
-                    const intern = new Intern(answer.name, id, answer.email, role, answer.school);
+                    const intern = new Intern(answer.name, id, answer.email, answer.school);
                     //push the new intern to the employee array
                     employees.push(intern);
                     //Call the createEmployee funciton to repeat the process
