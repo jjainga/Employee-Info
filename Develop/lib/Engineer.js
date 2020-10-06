@@ -2,9 +2,12 @@
 const Employee = require("./Employee");
 
 class Engineer extends Employee {
-    constructor(username) {
-        super(name, role);
-        this.usename = username;
-}}
+    constructor(name,id, email, role, username) {
+        super(name, id, email, role);
+        this.username = username;
+}
+    getGithub() {
+        return this.username
+    }}
 
 module.exports = Engineer;
