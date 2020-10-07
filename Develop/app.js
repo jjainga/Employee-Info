@@ -32,7 +32,7 @@ function createEmployees() {
                     {
                         name: "name",
                         message: "What is the name of the Manager?",
-                        type: "input"
+                        type: "input",
                     },
                     {
                         name: "email",
@@ -47,8 +47,6 @@ function createEmployees() {
                 ]).then(function (answer) {
                     //Creating an id based off how many employees have been created. 
                     const id = employees.length += 1;
-                    //Role is set off the first question so this is now static
-                    // const role = "Manager";
                     //Creating the manger with the constructor
                     const manager = new Manager(answer.name, id, answer.email, answer.officeNumber);
                     //push employee to the employee array to now have each employee
